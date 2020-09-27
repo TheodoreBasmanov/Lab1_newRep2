@@ -1,0 +1,19 @@
+#!/bin/bash
+#Check if the files exist:
+if ! [[ -f $1 ]]
+then 
+echo "The first file doesn't exist." 1>&2
+exit -4
+fi
+if ! [[ -f $2 ]]
+then 
+touch $2
+fi
+#Write the reversed file:
+exec 1>>$2
+arr=()
+readarray arr < $1
+for ((index=${#arr[@]}; $index >=0; index--))
+do
+echo ${arr[$index]}|rev
+done 
