@@ -21,6 +21,7 @@ else
 echo "The file check file is missing." 1>&2
 exit -5
 fi
+IFS=""
 #Get the command and the arguements. If there's not enough arguements, unlike main the app wouldn't show an error message, since the user was specifically told what to insert.
 while :
 do
