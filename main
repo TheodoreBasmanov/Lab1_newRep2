@@ -18,7 +18,7 @@ then
 echo "The file is still missing." 1>&2
 exit -5
 else
-if [[ "$#" -eq 4 ]]
+if ! [[ "$#" -eq 4 ]]
 then
 echo "Wron number of arguements." 1>&2
 exit -6
