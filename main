@@ -18,9 +18,9 @@ then
 echo "The file is still missing." 1>&2
 exit -5
 else
-if [[ "$#" -lt 4 ]]
+if [[ "$#" -eq 4 ]]
 then
-echo "Not enough arguements." 1>&2
+echo "Wron number of arguements." 1>&2
 exit -6
 else
 ./calc $2 $3 $4
@@ -71,7 +71,7 @@ then
 echo "Not enough arguements." 1>&2
 exit -6
 else
-./strlen $*
+./strlen "$*"
 fi
 fi
 else
