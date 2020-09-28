@@ -17,6 +17,8 @@ ${nl}-3 - inserted a non existing command in the Calculator.
 ${nl}-4 - tried to work with a non existing file in Search or Reversed writer.
 ${nl}-5 - tried to address the file of the app which is missing.
 ${nl}-6 - didn't insert enough arguements for the wanted command.
-${nl}-7 - inserted a line as an exit code."
+${nl}-7 - inserted a line as an exit code.
+${nl}-8 - the file is not readable.
+${nl}-9 - the file is not writable."
 echo "$string"
 
