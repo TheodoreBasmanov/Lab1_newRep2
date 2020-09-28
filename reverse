@@ -12,11 +12,7 @@ exit -8
 fi
 if ! [[ -f $2 ]]
 then 
-if ! [[ -w $2 ]]
-then
-echo "Can't create the file."
-exit -4
-fi
+touch $2
 fi
 if ! [[ -w $2 ]]
 then
